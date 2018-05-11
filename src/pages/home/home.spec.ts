@@ -113,6 +113,6 @@ describe('Home Page', () => {
   //     expect(btnEl.disabled).toBe(false);
   //   });
 
-  }));
+  // }));
 
 });
