@@ -1,12 +1,16 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>{{title}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-input name="username" type="text" [(ngModel)]="credentials.username"></ion-input>
+  <ion-input id="autocomplete" name="password" type="password" [(ngModel)]="credentials.password"></ion-input>
+  <button ion-button class="btnLogin" [disabled]="!credentials.username || credentials.username === '' || !credentials.password || credentials.password === ''">
+    Login
+  </button>
 </ion-content>
