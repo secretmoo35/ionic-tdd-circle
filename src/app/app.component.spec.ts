@@ -34,9 +34,11 @@ describe('Root Component', () => {
   });
 
   it('should create component', () => {
-
     expect(comp instanceof MyApp).toBe(true);
-  
+  });
+
+  it('should be rootpage is login', () => {
+    expect(comp['rootPage']).toBe('LoginPage');
   });
 
 });
